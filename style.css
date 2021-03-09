@@ -1,0 +1,178 @@
+.body
+{
+	 margin:0px;
+	 padding:0px;
+}
+
+.logo img
+  {
+  	 width: 250px;
+  }
+ .arrow
+ {
+ 	position: relative;
+ }
+ .position
+ {
+ 	position: fixed;
+ 	bottom: 0;
+ 	right:0;
+ }
+ .fixed
+ {
+ 	position: fixed;
+ 	top:300px;
+ 	right: 10px;
+ }
+ .arrow img{
+ 	width:50px;
+ 	height:50px;
+ }
+ .fixed img
+ {
+ 	width:30px;
+ 	height:50px;
+ }
+
+.info{
+	width: 100%; 
+	height:800px;
+}
+  
+.info-image
+{
+    width:45%;
+    height: 700px;
+    float:left;
+    text-align: center;
+    margin-top: 99px;
+    /*background-color: red;*/
+
+}
+.info-image img{
+	width:70%;
+	height:700px;
+}
+.clr
+{
+	overflow: auto;
+}
+
+.info-text{
+	width: 45%;
+	height: 600px;
+	margin-top: 99px;
+	padding-top: 100px;
+	float: right;
+    margin-right: 20px;
+    /*background-color: green;*/
+}
+.info-text-head
+{
+	width:90%; 
+	height:30%;
+}
+.icon
+{
+	width:11%;
+	height:50px;
+	float: left;
+	margin-bottom: 10px;
+	text-align: center;
+	/*padding-top: 5px;*/
+}
+.icon img{
+	height: 50px;
+}
+.icon-list-text{
+	
+	width: 89%;
+	height:50px;
+	float: right;
+	margin-bottom: 10px;
+}
+   								/*  end info section */
+ 							  /*strt section calculation*/
+  .calculation
+   {
+   	margin: 0;
+   	padding: 0;
+   	width:100%;
+   	height: 200px;
+   	background-color: #F8F8F8
+   }
+   .content
+   { 
+   	float: left;
+   	/*background-color: blue;*/
+   	margin-left: 20px;
+   	width:20%;
+   	height: 100%;
+   	text-align: center;
+
+   }
+   .content-img
+   {
+   	   padding-top: 40px;
+   }
+   .number{
+   	color: #84BEEB;
+   	font-size: 15px;
+   	}
+   p
+   {
+   	color: rgba(0,0,0,0.55);
+   	font-size: 20px;
+   }
+   .mg{
+   	  margin-left: 110px;
+   }
+   								/*end section calculation*/
+   								/*<!-- start section choosing -->*/
+
+    .choosing{
+    	width: 100%;
+    	height:400px;
+    	margin-top: 50px;
+    }
+    
+    .header
+    {
+    	text-align:center;
+
+    }
+
+   .choosing-content
+   {
+
+    	width:30%;  
+       height:90%;
+       /*background-color:yellow;*/
+       float: left;
+       margin-left: 20px;
+   }
+   .scales
+   {
+   	   height: 100px;
+   	   margin-bottom: 30px;
+   	   /*background-color: blue;*/
+
+   }
+   .choosing-img{
+   	float: left;
+   	height:90px;
+   	width:45px;
+   }
+   .marg{
+   	margin-left: 90px;
+   }
+   .container{
+   	width: 90%;
+   	height: 100%;
+   	margin: auto;
+   }
+   .container p
+   {
+   	 color: color: #777;
+   }
+         /*<!-- end section choosing -->*/
