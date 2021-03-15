@@ -1,42 +1,108 @@
-.body
+*
 {
 	 margin:0px;
 	 padding:0px;
-}
+	 /*font-family: fira sans;*/
+}                
+                   /*start header*/
 
 .logo img
   {
   	 width: 250px;
   }
- .arrow
+ .position-container
  {
  	position: relative;
+ 	overflow: hidden;
+ 	width:100%;
+ 	height: 500px;
  }
  .position
  {
  	position: fixed;
  	bottom: 0;
  	right:0;
+ 	font-size: 30px;
+ 	border-radius: 80%;
  }
  .fixed
  {
  	position: fixed;
- 	top:300px;
- 	right: 10px;
+ 	top:250px;
+ 	right: 0px;
+ 	font-size: 28px;
+ 	background-color: white;
  }
- .arrow img{
- 	width:50px;
- 	height:50px;
+ 
+ .medic-img{
+     width: 100%;
+     height:500px;
+     background-image: url( 'medic-1.jpg');
+     background-repeat: no-repeat;
+     background-size: cover;
+     position: relative;
  }
- .fixed img
- {
- 	width:30px;
- 	height:50px;
+ .medic-text h1{
+ 	font-Family:"Fira Sans";
+ 	font-size: 40px;
+    Color:#ffffff;
+    margin-bottom: 10px;
+      
  }
+ .medic-text p{
+ 	font-Family:"Fira Sans";
+ 	font-size: 14px;
+    Color:#ffffff;
+        margin-bottom: 30px;
+ }
+ .medic-text a{
+ 	display: inline-block;
+ 	font-Family:"Fira Sans";
+ 	font-size: 14px;
+ 	text-decoration:none;
+    border:1px solid white ;
+    width: 115px;
+    height: 30px;
+    text-align: center;
+    padding-top: 11px;
+    border-radius: 5%;
+ }
+ 
+  .blue 
+  { background-color: transparent;
+  	color: white;
+  	
+  }
+  .white{
+  	background-color:white;
+  	color: black;
+  }
+ 
+   .color{
+   	 position: absolute;
+   	 top:0px;
+   	 right:0;
+     background-color: rgba(70, 159, 228,0.6);
+     width: 100%;
+     height:500px;
+   }
+   .medic-img{
+   	overflow: auto;
+   }
+   .medic-text
+   {
+   	   width:50%;
+       margin:auto;
+       text-align:center;
+       margin-top: 150px;
+   }
+                          /* end header*/
+                          /* start info section */
 
 .info{
 	width: 100%; 
 	height:800px;
+	overflow: hidden;
 }
   
 .info-image
@@ -46,7 +112,7 @@
     float:left;
     text-align: center;
     margin-top: 99px;
-    /*background-color: red;*/
+
 
 }
 .info-image img{
@@ -65,31 +131,56 @@
 	padding-top: 100px;
 	float: right;
     margin-right: 20px;
-    /*background-color: green;*/
 }
 .info-text-head
 {
-	width:90%; 
+	width:100%; 
 	height:30%;
 }
-.icon
+     .info-text-head h1{
+     font-family: fira sans;
+   	 font-size: 30px;
+   	 color: #686868;
+   	 margin-bottom: 10px;
+   	 
+     }
+   .info-text-head p{
+   	 font-family: fira sans;
+   	 font-size: 15px;
+   	 color: #686868;
+   	 line-height: 28px;
+   	 font-weight: 400px;
+   }
+   .icon-list
+   {
+      width: 100%
+
+
+   }
+
+   .icon-list ul{  
+     list-style: none;
+   }
+   
+.icon i
 {
-	width:11%;
-	height:50px;
-	float: left;
-	margin-bottom: 10px;
-	text-align: center;
-	/*padding-top: 5px;*/
+	color: #fff;
+    background-color: #469fe4;
+    display: inline-block;
+    width: 50px;
+    height: 40px;
+    font-size: 25px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 12px;
+    margin-bottom: 10px;
+    list-style: none;
 }
-.icon img{
-	height: 50px;
-}
-.icon-list-text{
+
+.icon-list span{
 	
-	width: 89%;
-	height:50px;
-	float: right;
-	margin-bottom: 10px;
+	 color: #969696;
+    margin-left: 10px;
 }
    								/*  end info section */
  							  /*strt section calculation*/
@@ -99,12 +190,12 @@
    	padding: 0;
    	width:100%;
    	height: 200px;
-   	background-color: #F8F8F8
+   	background-color: #F8F8F8;
+   	margin-bottom: 50px;
    }
    .content
    { 
    	float: left;
-   	/*background-color: blue;*/
    	margin-left: 20px;
    	width:20%;
    	height: 100%;
@@ -114,10 +205,16 @@
    .content-img
    {
    	   padding-top: 40px;
+
+   }
+   .content-img i {
+       font-size: 40px;
+       color: #469fe4;
+       
    }
    .number{
    	color: #84BEEB;
-   	font-size: 15px;
+   	font-size: 20px;
    	}
    p
    {
@@ -134,6 +231,7 @@
     	width: 100%;
     	height:400px;
     	margin-top: 50px;
+    	margin-bottom: 100px;
     }
     
     .header
@@ -141,11 +239,27 @@
     	text-align:center;
 
     }
+    .header h1{
+       color:#686868;
+   	font-family: fira sans;
+   	 font-size: 28px;
+   	 font-weight:400px;
+   	 margin-bottom: 15px;
+   	
+    }
+    .header p
+    {
 
+   
+   	font-family: fira sans;
+   	 font-size: 18px;
+   	 color: #777;
+   	 font-weight:400px;
+    }
    .choosing-content
    {
 
-    	width:30%;  
+    	width:28%;  
        height:90%;
        /*background-color:yellow;*/
        float: left;
@@ -162,6 +276,7 @@
    	float: left;
    	height:90px;
    	width:45px;
+   	font-size: 25px;
    }
    .marg{
    	margin-left: 90px;
@@ -171,8 +286,347 @@
    	height: 100%;
    	margin: auto;
    }
+   .container h3
+   {
+   	color: #777;
+   	font-family: fira sans;
+   	 font-size: 15px;
+   	 color: #686868
+   	 font-weight:400px}
    .container p
    {
-   	 color: color: #777;
+   	color: #777;
+   	font-family: fira sans;
+   	 font-size: 13px;
+   	 color: #686868;
+   	 line-height: 28px;
+   	 font-weight: 400px;
    }
-         /*<!-- end section choosing -->*/
+                         /*<!-- end section choosing -->*/
+                          /*<!--   start setion patients */
+      .patients{
+	             width: 100%;
+	             height:650px;
+	             background-color:#F8F8F8;    
+      }
+      .container2{
+      	width:90%;
+      	margin:auto;
+      	overflow: hidden;
+      }
+      .patients-text{
+      	width:45%;
+      	height: 400px;
+      	float:left;
+      	margin-left: 40px;
+      	margin-top: 120px;
+      	padding-left: 35px;
+      	/*overflow: hidden;*/
+      }
+      .patients-text h1
+      {
+      	  font-family: fira sans;
+   		 font-size: 32px;
+   	 	font-weight: 400;
+  	   color: #303030;
+      }
+       .patients-text p{
+       	 font-family: fira sans;
+       	font-size: 16px;
+       	font-weight: 400px;
+
+		Color:#606060;
+		line-height: 30px;
+
+       }
+       .patients-text ul{
+       	list-style: none;
+       }
+      .patients-icons
+      {
+      	 /*padding-right: 105px;*/
+      	 float: left;
+      	 width: 45%
+      	 /*overflow: auto;*/
+      }
+      .patients-icons i{
+       font-size: 15px;
+       color: #469fe4;
+       margin-bottom: 10px;
+       margin-right: 10px;
+       /*padding-right: 80px;*/
+     }
+       .patients-icons span{
+
+        Color:#686868; 
+        font-family: fira sans;
+       	font-size: 15px;
+       	font-weight: 400px;
+
+
+       }
+      .patients-img{
+        width:45%;
+      	height:600px;
+      	
+      	float: right;
+      	margin-top: 90px;
+      	padding-right: 15px;
+
+      }
+      .patients-img img {
+      	height: 500px;
+      	width:90%;
+      	text-align:center;
+      }
+						          /*<!-- end section patients */
+						          /*start section comment*/
+
+	.comment
+	{
+		width: 100%;
+		height:350px;
+		margin-top: 50px;
+	}
+	.comment-head{
+	
+		text-align: center;
+	}
+	.comment-head h1{
+	
+      	  font-family: fira sans;
+   		 font-size: 32px;
+   	 	font-weight: 400;
+  	   color: #303030;
+  	   margin-bottom: 10px;
+      }
+     .comment-head p{
+       	 font-family: fira sans;
+       	font-size: 16px;
+       	font-weight: 400px;
+		Color:#606060;
+		line-height: 30px;
+		margin-bottom: 40px;
+	}
+
+		.comment-content{
+			width: 97%;
+			height:200px;
+			margin: auto;
+		}
+		.com-cont
+		{
+			background-color: #F8F8F8;
+			width:30%;
+			height:200px;
+			float:left;
+			margin-left: 30px;
+		}
+		.com-cont p{
+			 font-family: fira sans;
+       	font-size: 16px;
+       	font-weight: 400px;
+		Color:#606060;
+		line-height: 30px;
+		}
+		.span{
+			width:80%;
+			margin:auto;
+		}
+		.doe-span span {
+	   
+		Color:#606060;
+		margin-left: 3%px;
+		text-align: left;
+		width:33%;
+		display: inline-block;
+
+		}
+        .bri-span span {
+	  
+	    Color:#BABABA;
+		margin-left: 3%px;
+		text-align: left;
+		width:33%;
+		display: inline-block;
+		
+		
+		
+        }
+
+						          /*end section comment*/
+						          /*sart sectio pre footer*/
+	    .pree-footer{
+	    	width:100%;
+	    	height: 300px;
+	    	background-color: #469FE4;
+	    }
+	    .pree-footer-text
+	    {
+	    	text-align:center;
+	    	padding-top: 70px;
+	    }
+	    .pree-footer-text h2
+	    {
+           font-family: fira sans;
+   		 font-size: 40px;
+   	 	font-weight: 400;
+  	   color: white;
+  	   margin-bottom: 15px;
+	    }
+	    .pree-footer-text p
+	    {
+           font-family: fira sans;
+   		 font-size: 15px;
+   	 	font-weight: 400;
+  	   color: #F7E2FD;
+  	     margin-bottom: 15px;
+	    }
+	    .pree-footer-text button{
+	    	font-family: fira sans;
+   		 font-size: 15px;
+   	 	font-weight: 400;
+  	   color: white;
+  	   border:none;
+  	    background-color: #469FE4;
+  	    width: 120px;
+  	    height: 58px;
+  	    border:1px solid  #fff;
+  	    border-radius: 5%
+	    }
+
+	    .pree-footer-text button :hover{
+	    	color: #000;
+          background-color: #fff;
+	    }
+	                  /*end section pre footer*/
+	                  /*start section final*/
+
+        .final {
+        	width: 100%;
+        	height:350px;
+        	background-color:rgb(75, 110, 137);
+        }
+        .final-container{
+        	width: 90%;
+        	height:350px;
+        	margin:auto;
+
+        	
+        }
+        .divide{
+        	width: 22%;
+        	height:350px;
+        	float: left;
+        	margin-left: 35px;
+        	margin-top: 30px;
+        }
+        .final h4
+        {
+        font-family: fira sans;
+       	font-size: 14px;
+       	margin-bottom:8px;
+       	line-height:23px; 
+       	color: #fff;
+       	text-transform: uppercase;
+       	font-weight: 100px;
+
+        }
+        .final-text p{
+              font-family: fira sans;
+       	font-size: 14px;
+       	line-height: 26px;
+             color: #d4dbe0;
+        }
+        .final-news a
+        {
+            display: block;
+            text-decoration:none;
+            color: rgb(212, 219, 224);
+            margin-bottom: 5px;
+            margin-top: 5px;
+            font-size: 14px;
+            font-family: fira sans;
+        }
+        .final-news span{
+        	color: rgba(212, 219, 224 ,0.5);;
+        	font-size: 11px;
+        	line-height: 23px;
+        	   font-family: fira sans;
+
+        }
+          .final hr
+        {
+        	
+        	border: 0.5px solid rgba(212, 219, 224 ,0.1);}
+        	.final-hours ul
+        	{
+        		 
+            text-decoration:none;
+            color: rgb(212, 219, 224);
+            margin-top: 5px;
+            font-size: 14px;
+               font-family: fira sans;
+        	}
+        	.final-hours li
+        	{
+        		margin-bottom: 5px;
+        		list-style-type: square;
+        	}
+        	.final-contact i
+        	{
+        		 color: white;
+        		 margin-left: 5px;
+        		 margin-bottom: 5px;
+        	}
+        	.final-contact span{
+        		  margin-left: 10px;
+        		  margin-bottom: 10px;
+        		  color: #fff;
+        		  font-size: 11px;
+                  font-family: fira sans;
+        	}
+        	.cont-icon
+        	{
+        		margin-bottom: 10px;
+        	}
+        	            /* end section final*/
+
+	                  /*  start footer*/
+
+
+        .footer
+        {
+        	width: 100%;
+        	height:60px;
+        	background-color: #456A86;
+        }
+        .icon-footer{
+           width:80%;
+           margin: auto;
+        }
+        .icon-footer p{
+        	float: left;
+        	   font-family: fira sans;
+       	font-size: 12px;
+       	line-height: 26px;
+       	color: #fff;
+
+        }
+        .icon-footer a{ 
+        	float: right;
+            text-decoration:none;
+            color: white;
+          /*border:1px solid white;
+            border-radius: 50%*/;
+            
+        }
+        .icon-footer i{
+
+        	font-size: 20px;
+        	margin-left:10px;
+        	text-align: center;
+            
+      }
+
+	                  /*end footer*/
