@@ -23,15 +23,17 @@
  	bottom: 0;
  	right:0;
  	font-size: 30px;
- 	border-radius: 80%;
+ 	
  }
  .fixed
  {
  	position: fixed;
  	top:250px;
  	right: 0px;
- 	font-size: 28px;
+ 	font-size: 25px;
  	background-color: white;
+ 	border-radius: 3%;
+
  }
  
  .medic-img{
